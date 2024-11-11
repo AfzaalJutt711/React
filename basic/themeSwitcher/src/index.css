@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(58 141 150);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.toggleBtnBox{
+  margin-right: 10px;
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.892);
+  width: 500px;
+  height: 300px;
+  border-radius: 32px;
+}
+
+html.dark .card{
+  background-color: #053135;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: 2px solid #999;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked {
+  background-color: #333;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label {
+  color: #fff;
+}
+
+.dark-mode-toggle label {
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

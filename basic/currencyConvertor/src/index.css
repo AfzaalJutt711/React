@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card{
+  width: 60vw;
+  height: 25vw;
+  background-color: rgba(255, 255, 255, 0.121);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.094);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+button{
+  background-color: rgb(69, 69, 221);
+  border: none;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+
+.swapBtn{
+  margin-top: -5px;
+  margin-bottom: -5px;
+  z-index: 10;
+}
+
+/* component */
+.inputBox{
+  background-color: white;
+  width: 80%;
+  height: 35%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+label{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.58);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.amount, .currency{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  border: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select{
+  border: none;
+  background-color: rgba(19, 19, 26, 0.142);
+  width: 50px;
+  align-self: center;
+  height: 20px;
+  border-radius: 8px;
+}

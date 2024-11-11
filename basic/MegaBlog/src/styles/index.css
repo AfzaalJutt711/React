@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main layouts */
+.app {
+    background: #9CA3AF;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px;
+    padding-top: 10px;
+}
+.app main {
+    min-height: calc(100vh - 52px - 200px);
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+/* smaller component styles */
+.logo{
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Mr Dafoe";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-decoration: none;
+}
